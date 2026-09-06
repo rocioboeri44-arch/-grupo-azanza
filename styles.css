@@ -1,1 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f3ee;
+  color: #171717;
+  line-height: 1.6;
+}
+
+.nav {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-family: Manrope;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand span {
+  font-weight: 600;
+}
+
+.nav nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav nav a,
+.nav-cta {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-cta {
+  border: 1px solid #777;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+.hero {
+  min-height: 600px;
+  background: #111;
+  color: #fff;
+  padding: 80px 7%;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777;
+}
+
+.hero .eyebrow {
+  color: #aaa;
+}
+
+.hero h1 {
+  font: 800 clamp(50px, 7vw, 88px) / 0.98 Manrope;
+  margin: 15px 0 25px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: #aaa;
+}
+
+.lead {
+  font-size: 18px;
+  max-width: 650px;
+  color: #c9c9c9;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  padding: 13px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary {
+  background: #fff;
+  color: #111;
+}
+
+.ghost {
+  border: 1px solid #777;
+  color: #fff;
+}
+
+.hero-card {
+  background: #f5f3ee;
+  color: #111;
+  padding: 38px;
+  border-radius: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero-card h2 {
+  font: 800 38px / 1.05 Manrope;
+}
+
+.hero-card p {
+  color: #555;
+}
+
+.price {
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  margin: 25px 0;
+}
+
+.price strong {
+  font: 800 48px Manrope;
+}
+
+.price small,
+.price span {
+  padding-bottom: 8px;
+}
+
+.hero-card a {
+  color: #111;
+  font-weight: 700;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  padding: 35px 7%;
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font: 800 35px Manrope;
+}
+
+.stats span {
+  color: #666;
+  font-size: 14px;
+}
+
+.section {
+  padding: 90px 7%;
+}
+
+.section h2,
+.maintenance h2,
+.contact h2 {
+  font: 800 clamp(35px, 5vw, 58px) / 1.05 Manrope;
+  margin: 10px 0 45px;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.services {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.services article,
+.review {
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.icon {
+  font-weight: 800;
+  color: #999;
+}
+
+.services h3 {
+  font: 700 24px Manrope;
+}
+
+.services p,
+.review p {
+  color: #666;
+}
+
+.maintenance {
+  background: #171717;
+  color: #fff;
+  padding: 90px 7%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+}
+
+.maintenance .eyebrow {
+  color: #999;
+}
+
+.maintenance .lead {
+  color: #ccc;
+}
+
+.price-big {
+  font: 800 70px Manrope;
+}
+
+.price-big span {
+  font-size: 35px;
+}
+
+.price-big small {
+  font: 400 18px 'DM Sans';
+  color: #aaa;
+}
+
+.muted {
+  color: #aaa;
+}
+
+.light {
+  background: #fff;
+  color: #111;
+  margin-top: 15px;
+}
+
+.includes {
+  background: #242424;
+  padding: 35px;
+  border-radius: 8px;
+}
+
+.includes h3 {
+  font: 700 25px Manrope;
+}
+
+.includes li {
+  margin: 14px 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background: #e9e6df;
+}
+
+.about > div:last-child {
+  padding-top: 30px;
+}
+
+.reviews {
+  background: #f5f3ee;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.review-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stars {
+  letter-spacing: 2px;
+}
+
+.contact {
+  text-align: center;
+  padding: 90px 7%;
+  background: #fff;
+}
+
+.contact h2 {
+  max-width: 850px;
+  margin: 10px auto;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.contact-buttons a {
+  border: 1px solid #ccc;
+  padding: 13px 20px;
+  border-radius: 30px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 30px 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #000b;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-box {
+  background: #fff;
+  color: #111;
+  width: min(500px, 100%);
+  padding: 35px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: 0;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal form {
+  display: grid;
+  gap: 12px;
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.modal textarea {
+  min-height: 120px;
+}
+
+@media (max-width: 800px) {
+
+  .nav nav {
+    display: none;
+  }
+
+  .hero,
+  .maintenance,
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 55px 6%;
+  }
+
+  .hero-card {
+    margin-top: 10px;
+  }
+
+  .stats,
+  .services,
+  .review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    padding: 65px 6%;
+  }
+
+  .maintenance {
+    padding: 65px 6%;
+  }
+
+  .about {
+    gap: 20px;
+  }
+
+  .section-head {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .stats,
+  .services,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .actions,
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .nav {
+    padding: 0 5%;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+}
